@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.1//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.1.dtd">
+<urlrewrite>
+    <rule>
+        <note>
+            index页面跳转
+        </note>
+        <from>^/index.html$</from>
+        <to type="forward">/index.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            contactus页面跳转
+        </note>
+        <from>^/contactus.html$</from>
+        <to type="forward">/contactus.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            culture页面跳转
+        </note>
+        <from>^/culture.html$</from>
+        <to type="forward">/culture.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            introduce页面跳转
+        </note>
+        <from>^/introduce.html$</from>
+        <to type="forward">/introduce.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            mc页面跳转
+        </note>
+        <from>^/mc.html$</from>
+        <to type="forward">/mc.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            culture_home页面跳转
+        </note>
+        <from>^/culture_home.html$</from>
+        <to type="forward">/culture_home.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            history页面跳转
+        </note>
+        <from>^/history.html$</from>
+        <to type="forward">/history.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            婚礼视频页跳转
+        </note>
+        <from>^/hunli.html$</from>
+        <to type="forward">/hunli.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            video页面跳转
+        </note>
+        <from>^/video_([a-zA-Z0-9]+).html$</from>
+        <to type="forward">/video.jsp?id=$1</to>
+    </rule>
+
+    <rule>
+        <note>
+            mv页面跳转
+        </note>
+        <from>^/mv_([a-zA-Z0-9]+)_([a-zA-Z0-9]+).html$</from>
+        <to type="forward">/mv.jsp?type=$1&amp;page=$2</to>
+    </rule>
+
+
+</urlrewrite>
